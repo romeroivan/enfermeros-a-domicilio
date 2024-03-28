@@ -1,0 +1,127 @@
+.nav {
+
+    .nav-contacto {
+        background-image: linear-gradient($turquesa 90%, $turquesa-oscuro);
+        display: flex;
+        justify-content: center;
+
+        .nav-telefono {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+
+            li {
+                margin: 5px;
+
+                a {
+                    text-decoration: none;
+                    color: $blanco;
+                }
+            }
+
+        }
+
+        .redes-sociales {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+
+            li {
+                margin: 4px;
+
+                a {
+                    text-decoration: none;
+
+                    img {
+                        height: 10px;
+                        width: 10px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .barra-de-navegacion {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $turquesa-oscuro;
+        height: auto;
+
+        .nav-logo {
+            width: 40px;
+            height: 40px;
+
+            ul {
+                list-style: none;
+
+                li {
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+        }
+
+        ul {
+
+            li {
+                list-style: none;
+                margin: 5px;
+
+                a {
+                    text-decoration: none;
+                    color: $blanco;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 595px) {
+    .nav {
+        .nav-contacto {
+            display: flex;
+            justify-content: space-around;
+
+            .nav-telefono {
+                display: flex;
+                justify-content: space-evenly;
+                width: 50%;
+
+            }
+
+            .redes-sociales {
+                display: flex;
+                justify-content: space-around;
+                width: 50%;
+
+                li {
+
+                    a {
+                        img {
+                            height: 25px;
+                            width: 25px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .barra-de-navegacion {
+            ul {
+                display: flex;
+                flex-direction: row;
+
+                li {
+                    a {
+                        margin: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
