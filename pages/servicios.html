@@ -1,20 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    <nav>
-        <li><a href="../index.html"><img src="#" alt="logo"></a></li>
-        <ul>
-            <li><a href="../index.html">inicio</a></li>
-            <li><a href="./comunicarse.html">comunicarse</a></li>
-            <li><a href="./profecionales.html">profecionales</a></li>
-            <li><a href="./servicios.html">servicios</a></li>
-            <li><a href="./primeros-auxilios.html">primeros auxilios</a></li>
-        </ul>
+    <nav class="nav">
+        <div class="nav-contacto">
+            <ul class="nav-telefono">
+                <li><a href="tel:+1122444690">1122444690</a></li>
+                <li><a href="tel:+1122444690">1122444690</a></li>
+                <li><a href="tel:+1122444690">contacto</a></li>
+            </ul>
+            <ul class="redes-sociales">
+
+                <li><a href="https://www.instagram.com/_romeroivan_/"><img src="../images/icono-whatsapp.png"
+                            alt="icono whatsapp"></a></li>
+                <li><a href="https://www.instagram.com/_romeroivan_/"><img src="../images/icono-Instagram.png"
+                            alt="icono instagram"></a></li>
+                <li><a href="https://www.instagram.com/_romeroivan_/"><img src="../images/icono-facebook.png"
+                            alt="icono facebook"></a></li>
+                <li><a href="https://www.instagram.com/_romeroivan_/"><img src="../images/icono-gmail.png"
+                            alt="icono gmail"></a></li>
+            </ul>
+        </div>
+        <div class="barra-de-navegacion">
+            <ul>
+                <li><a href="../index.html"><img src="../images/logo.png" alt="logo" class="nav-logo"></a></li>
+            </ul>
+
+            <ul>
+                <li><a href="../index.html">inicio</a></li>
+                <li><a href="../pages/comunicarse.html">comunicarse</a></li>
+                <li><a href="../pages/profecionales.html">profecionales</a></li>
+                <li><a href="../pages/servicios.html">servicios</a></li>
+                <li><a href="../pages/primeros-auxilios.html">primeros auxilios</a></li>
+            </ul>
+        </div>
     </nav>
+
+    <main>
+        
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <ul>
+                <li>
+                    <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+                </li>
+            </ul>
+        </div>
+        <section class="footer">
+            <div class="footer-link">
+                <ul>
+                    <li><a href="../index.html">inicio</a></li>
+                    <li><a href="../pages/comunicarse.html">comunicarse</a></li>
+                    <li><a href="../pages/profecionales.html">profecionales</a></li>
+                    <li><a href="../pages/servicios.html">servicios</a></li>
+                    <li><a href="../pages/primeros-auxilios.html">primeros auxilios</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-redes-sociales">
+                <h4>redes sociales</h4>
+                <ul class="redes-sociales">
+
+                    <li><a href="https://www.instagram.com/_romeroivan_/"><img src="../images/icono-whatsapp.png"
+                                alt="icono whatsapp"></a></li>
+                    <li><a href="https://www.instagram.com/_romeroivan_/"><img src="../images/icono-Instagram.png"
+                                alt="icono instagram"></a></li>
+                    <li><a href="https://www.instagram.com/_romeroivan_/"><img src="../images/icono-facebook.png"
+                                alt="icono facebook"></a></li>
+                    <li><a href="https://www.instagram.com/_romeroivan_/"><img src="../images/icono-gmail.png"
+                                alt="icono gmail"></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-enlaces-rapidos">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#">.</a></li>
+                    <li><a href="#">.</a></li>
+                    <li><a href="#">.</a></li>
+                    <li><a href="#">.</a></li>
+                    <li><a href="#">.</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contacto">
+                <form action="#" method="POST">
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="nombre">
+
+                    <label for="apellido"></label>
+                    <input type="text" id="apellido" name="apellido" required placeholder="apellido">
+
+                    <label for="gmail"></label>
+                    <input type="email" id="gmail" name="gmail" required placeholder="gmail">
+
+                    <label for="telefono"></label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="telefono" required>
+
+                    <label for="mensaje"></label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required placeholder="mensaje"></textarea>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+        <div class="footer-texto">
+            <p>2024 enfermeros a domicilio</p>
+        </div>
+    </footer>
 </body>
+
 </html>

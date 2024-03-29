@@ -1,0 +1,137 @@
+.footer {
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 3px 3px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "footer-link footer-redes-sociales"
+        "footer-enlaces-rapidos footer-contacto";
+}
+
+.footer-redes-sociales {
+    grid-area: footer-redes-sociales;
+}
+
+.footer-link {
+    grid-area: footer-link;
+}
+
+.footer-enlaces-rapidos {
+    grid-area: footer-enlaces-rapidos;
+}
+
+.footer-contacto {
+    grid-area: footer-contacto;
+}
+
+
+footer {
+    background-color: $turquesa;
+    
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+
+        ul {
+            list-style: none;
+
+            li {
+                a {
+                    text-decoration: none;
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ul {
+            list-style: none;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: $blanco;
+                }
+            }
+        }
+    }
+
+    .footer-redes-sociales {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        ul {
+            list-style: none;
+            display: flex;
+
+            li {
+                margin: 5px;
+
+                a {
+                    text-decoration: none;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-enlaces-rapidos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        ul {
+            list-style: none;
+
+            li {
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .footer-contacto {
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            input {
+                margin: 5px;
+                width: 90%;
+            }
+
+            textarea {
+                width: 90%;
+                margin: 5px;
+            }
+
+        }
+
+    }
+    .footer-texto{
+        display: flex;
+        justify-content: center;
+    }
+}

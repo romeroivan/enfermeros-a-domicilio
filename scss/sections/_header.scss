@@ -9,13 +9,27 @@
             display: flex;
             justify-content: space-around;
             list-style: none;
+            align-items: center;
 
             li {
-                margin: 5px;
+                margin: 2px;
+                transition: transform 0.3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
 
                 a {
                     text-decoration: none;
                     color: $blanco;
+                    padding: 5px 3px;
+                    border-radius: 5px;
+
+                    &:hover {
+                        background-color: $turquesa-oscuro;
+                        color: $negro;
+
+                    }
                 }
             }
 
@@ -27,14 +41,20 @@
             justify-content: space-around;
 
             li {
-                margin: 4px;
+                margin: 2px;
+                transition: transform 0.3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
 
                 a {
                     text-decoration: none;
+                    padding: 0;
 
                     img {
-                        height: 10px;
-                        width: 10px;
+                        height: 15px;
+                        width: 15px;
                     }
                 }
             }
@@ -50,16 +70,25 @@
         height: auto;
 
         .nav-logo {
-            width: 40px;
-            height: 40px;
+            width: 80px;
+            height: 80px;
 
             ul {
                 list-style: none;
 
                 li {
+                    transition: transform 0.3s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
 
                     a {
                         text-decoration: none;
+
+                        &:hover {
+                            background-color: $turquesa-oscuro;
+                        }
                     }
                 }
             }
@@ -71,10 +100,23 @@
             li {
                 list-style: none;
                 margin: 5px;
+                transition: transform 0.3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
 
                 a {
                     text-decoration: none;
                     color: $blanco;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+
+                    &:hover {
+                        background-color: $turquesa;
+                        color: $negro;
+
+                    }
                 }
             }
         }
@@ -112,6 +154,12 @@
         }
 
         .barra-de-navegacion {
+
+            .nav-logo {
+                width: 40px;
+                height: 40px;
+            }
+
             ul {
                 display: flex;
                 flex-direction: row;
