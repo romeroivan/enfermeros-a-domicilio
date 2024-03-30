@@ -30,8 +30,9 @@
 
 
 footer {
-    background-color: $turquesa;
-    
+    background-color: $turquesa-oscuro;
+    margin-top: 20px;
+
 
     .footer-logo {
         display: flex;
@@ -117,6 +118,7 @@ footer {
             display: flex;
             flex-direction: column;
             align-items: center;
+
             input {
                 margin: 5px;
                 width: 90%;
@@ -130,8 +132,12 @@ footer {
         }
 
     }
-    .footer-texto{
+
+    .footer-texto {
         display: flex;
         justify-content: center;
+        align-items: center;
+        height: 35px;
+        background-color: $turquesa;
     }
 }

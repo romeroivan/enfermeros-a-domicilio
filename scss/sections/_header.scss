@@ -163,10 +163,11 @@
             ul {
                 display: flex;
                 flex-direction: row;
+                align-items: center;
 
                 li {
                     a {
-                        margin: 10px;
+                        margin: 5px;
                     }
                 }
             }
