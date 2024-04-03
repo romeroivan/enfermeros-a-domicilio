@@ -4,14 +4,21 @@
 }
 
 .inicio-index {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .texto-index {
+    .inicio-texto-index {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+
+        h3 {
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
+
 
 .contenido-index {
     display: flex;
@@ -24,15 +31,29 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: $turquesa solid 1px;
+        border-bottom: $turquesa solid 1px;
+        margin: 5px;
 
         div {
-            transition: transform 0.3s ease-in-out;
             border-radius: 5px;
             padding: 5px 10px;
+            animation: heartbeat 1s infinite;
+
+            @keyframes heartbeat {
+                0% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.1);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
 
             &:hover {
-                transform: scale(1.1);
                 background-color: $turquesa-oscuro;
             }
 
@@ -43,19 +64,16 @@
                 &:hover {
                     color: $blanco;
                 }
-
             }
         }
 
         h3 {
             background-color: $turquesa-oscuro;
             width: 100%;
+            height: 65px;
             display: flex;
             justify-content: center;
-        }
-
-        p {
-            background-image: linear-gradient($turquesa-oscuro 1%, $turquesa 2%, $blanco 30%);
+            align-items: center;
         }
     }
 
@@ -64,15 +82,29 @@
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
-        border: $turquesa solid 1px;
+        border-bottom: $turquesa solid 1px;
+        margin: 5px;
 
         div {
-            transition: transform 0.3s ease-in-out;
             border-radius: 5px;
             padding: 5px 10px;
+            animation: heartbeat 1s infinite;
+
+            @keyframes heartbeat {
+                0% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.1);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
 
             &:hover {
-                transform: scale(1.1);
                 background-color: $turquesa-oscuro;
             }
 
@@ -80,21 +112,20 @@
                 text-decoration: none;
                 color: $negro;
 
+
                 &:hover {
                     color: $blanco;
                 }
-
             }
         }
+
         h3 {
             background-color: $turquesa-oscuro;
             width: 100%;
+            height: 65px;
             display: flex;
             justify-content: center;
-        }
-
-        p {
-            background-image: linear-gradient($turquesa-oscuro 1%, $turquesa 2%, $blanco 30%);
+            align-items: center;
         }
     }
 
@@ -103,15 +134,29 @@
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
-        border: $turquesa solid 1px;
+        border-bottom: $turquesa solid 1px;
+        margin: 5px;
 
         div {
-            transition: transform 0.3s ease-in-out;
             border-radius: 5px;
             padding: 5px 10px;
+            animation: heartbeat 1s infinite;
+
+            @keyframes heartbeat {
+                0% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.1);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
 
             &:hover {
-                transform: scale(1.1);
                 background-color: $turquesa-oscuro;
             }
 
@@ -122,24 +167,45 @@
                 &:hover {
                     color: $blanco;
                 }
-
             }
         }
 
         h3 {
             background-color: $turquesa-oscuro;
             width: 100%;
+            height: 65px;
             display: flex;
             justify-content: center;
+            align-items: center;
         }
+    }
+}
 
-        p {
-            background-image: linear-gradient($turquesa-oscuro 1%, $turquesa 2%, $blanco 30%);
+
+.servicios-index {
+    .servicios-texto-index {
+        background-image: linear-gradient($turquesa-oscuro 19%, $turquesa 21%);
+        margin: 5px;
+
+        h3 {
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
 
 @media (min-width: 595px) {
+
+    .inicio-index {
+        display: flex;
+        justify-content: center;
+        .inicio-texto-index {
+            width: 75%;
+        }
+    }
+
     .contenido-index {
         display: flex;
         flex-direction: row;
@@ -148,28 +214,26 @@
 
         .comunicarse-index {
             width: 32%;
-
-            h3 {}
-
-            p {}
         }
-
 
         .profecionales-index {
             width: 32%;
-
-            h3 {}
-
-            p {}
         }
 
         .primeros-auxilios-index {
             width: 32%;
-
-            h3 {}
-
-            p {}
         }
+    }
 
+    .servicios-index {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        .servicios-texto-index {
+            width: 75%;
+            background-image: linear-gradient($turquesa-oscuro 40%, $turquesa 43%);
+            margin: 5px;
+        }
     }
 }

@@ -1,3 +1,8 @@
+.titulo-comunicarse{
+    display: flex;
+    justify-content: center;
+}
+
 .contenido-comunicarse {
     display: flex;
     flex-direction: column;
@@ -6,14 +11,17 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: $turquesa solid 1px;
+        border-bottom: $turquesa solid 1px;
         margin-top: 20px;
+        margin: 5px;
 
         h2 {
             background-color: $turquesa-oscuro;
             width: 100%;
+            height: 65px;
             display: flex;
             justify-content: center;
+            align-items: center;
         }
 
     }
@@ -22,14 +30,17 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: $turquesa solid 1px;
+        border-bottom: $turquesa solid 1px;
         margin-top: 20px;
+        margin: 5px;
 
         h2 {
             background-color: $turquesa-oscuro;
             width: 100%;
+            height: 65px;
             display: flex;
             justify-content: center;
+            align-items: center;
         }
     }
 
@@ -37,14 +48,17 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: $turquesa solid 1px;
+        border-bottom: $turquesa solid 1px;
         margin-top: 20px;
+        margin: 5px;
 
         h2 {
             background-color: $turquesa-oscuro;
             width: 100%;
+            height: 65px;
             display: flex;
             justify-content: center;
+            align-items: center;
         }
     }
 }
